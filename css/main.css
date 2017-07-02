@@ -1,0 +1,411 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Playfair+Display');
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #fff;
+  font-family: "Oswald";
+  font-weight: 300;
+  font-size: 16px;
+  color: #525252;
+}
+
+.karkasas {
+  width: 100%;
+  margin: auto;
+}
+
+.logo {
+  float: left;
+  padding-left: 175px;
+  padding-top: 21px;
+}
+
+.search-bar {
+  padding-right: 140px;
+  padding-top: 27px;
+  position: relative;
+  overflow: hidden;
+  float: right;
+}
+
+.search-bar a {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #a0a0a0;
+  text-decoration: none;
+}
+
+.search-bar a:hover, .search-bar a:active {
+  padding-right: 5px;
+  padding-left: 5px;
+  padding-bottom: 5px;
+  color: #a4252f;
+  text-decoration: none;
+}
+
+.search {
+  display:inline-block;
+    overflow:hidden;
+}
+
+.search > * {
+  vertical-align:top;
+    border:0;
+    margin:0;
+}
+
+.header-meniu {
+  padding-right: 100px;
+  padding-top: 12px;
+  display: flex;
+  float: right;
+  clear: right;
+}
+
+.nav-meniu li a:hover  {
+  border: 1px solid #dbdbdb;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 34px; 
+  padding-left: 34px;
+  color: #a4252f;
+  text-decoration: none;
+}
+
+.nav-meniu ul, .nav-meniu ol{
+  list-style-type: none;
+}
+
+.nav-meniu > ul {
+  display: flex;
+  
+}
+
+.nav-meniu > ul li a {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-right: 35px; 
+  padding-left: 35px;
+  font-family: "Oswald";
+  color: #525252;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-meniu li ul{
+  position: absolute;
+  display: none;
+}
+
+.nav-meniu li > ul li a {
+  border: none;
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 34px; 
+  padding-left: 34px;
+  text-transform: none;
+}
+
+.nav-meniu li:hover > ul {
+  display: block;
+}
+
+.nav-meniu li > ul li {
+  background-color: rgba(255, 255, 255, 0.5);
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 34px; 
+  
+}
+
+.nav-meniu li > ul li a:hover {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  padding-right: 34px; 
+  padding-left: 34px;
+  color: #a4252f;
+  text-decoration: none;
+}
+
+input[type=text] {
+  border: 1px solid #a0a0a0;
+  height: 22px;
+  margin: 0;
+  font-weight: "Oswald";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #a0a0a0;
+  outline: none;
+  padding-left: 10px;
+  display: inline-block;
+  float: left;
+}
+
+input[type=text]:active, input[type=text]:hover {
+  outline: none;
+}
+
+button {
+  background-image: url(../images/search.png);
+  border: none;
+  width: 31px;
+  height: 24px;
+  outline: none;
+  margin: 0;
+  display: inline-block;
+  float: left;
+}
+
+button:active, button:hover{
+  border: none;
+  outline: none;
+}
+
+.color-navbar {
+  display: flex;
+  flex-direction: row;
+  height: 100px;
+  clear: both;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  
+}
+
+.color-navbar > * {
+  list-style-type: none;
+  font-size: 16px;
+  text-align: center;
+  display: table;
+  border-collapse: collapse;
+  height: 100%;
+}
+
+.red a, .orange a, .yellow a, .green a {
+  color: #ffffff;
+  text-decoration: none;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.red a:focus, .orange a:focus, .yellow a:focus, .green a:focus {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.red {
+  flex-grow: 1;
+  width: 25%;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #f73f4e;
+  word-wrap: break-word;
+}
+
+.orange {
+  flex-grow: 1;
+  width: 25%;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #fe772d;
+  word-wrap: break-word;
+}
+
+.yellow {
+  flex-grow: 1;
+  width: 25%;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #f6d01d;
+  word-wrap: break-word;
+}
+
+.green {
+  flex-grow: 1;
+  width: 25%;
+  
+  padding-left: 20px;
+  padding-right: 20px;
+  background: #2de850;
+  word-wrap: break-word;
+}
+
+
+
+h1 {
+  display: inline;
+  position: absolute;
+  font-family: "Playfair";
+  font-size: 32px;
+  font-style: italic;
+  color: #ffffff;
+  padding-left: 275px;
+  padding-top: 175px;
+}
+
+.logo-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%
+  height: 100px;
+  clear: both;
+  flex-wrap: wrap;
+}
+
+.logo-bar > * {
+  width: 20%;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.bottom-bar {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  clear: both;
+}
+
+.bottom-bar > * {
+  flex-grow: 1;
+  padding-left: 40px;
+  padding-top: 40px;
+}
+
+.meniu-header {
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.dropdown-meniu > li {
+  list-style-type: none;
+  line-height: 2.0;
+}
+
+.dropdown-meniu * a {
+  color: #525252;
+  text-decoration: none;
+}
+
+hr {
+  width: 200px;
+}
+
+.grey-block {
+  width: 25%;
+  background-color: #e7e7e7;
+}
+
+.map-block {
+  width: 25%;
+  background-image: url(../images/map.png);
+}
+
+.white-block {
+  width: 25%;
+}
+
+.map {
+  margin: auto;
+  margin-top: 100px;
+  background: white;
+  width: 85%;
+  height: 35px;
+  padding-left: 15px;
+  padding-top: 10px;
+  text-transform: uppercase;
+}
+
+.footer {
+  background: #4d4d4d;
+  height: 50px;
+  padding-top: 20px;
+  font-size: 16px;
+  text-align: center;
+  color: #dddddd;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+.mySlides {
+  display:none
+  z-index: -1;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  position: relative;
+  margin: auto;
+  z-index: -1;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  background-color: rgba(146,146,146,0.8);
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(146,146,146,0.8);
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}
